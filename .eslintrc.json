@@ -1,5 +1,5 @@
 {
-  "plugins": ["node", "prettier"],
+  "plugins": ["prettier"],
   "parserOptions": {
     "sourceType": "module"
   },
@@ -7,13 +7,7 @@
     "node": true,
     "es6": true
   },
-  "extends": [
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "eslint:recommended",
-    "plugin:node/recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "standard", "prettier", "prettier/standard"],
   "rules": {
     "no-unused-vars": [
       "error",
